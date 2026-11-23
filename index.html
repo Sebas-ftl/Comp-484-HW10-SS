@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- title -->
+    <title>Your Giga Pet</title>
+
+    <!-- Meta -->
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Links -->
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- Menu screen -->
+    <div id="menu">
+      <section class="card">
+        <!-- header -->
+        <header>
+          <h1>Main Menu</h1>
+        </header>
+
+        <!-- body -->
+        <main>
+          <h2>Create your Giga Pet</h2>
+          <section id="info">
+            <label>Name: </label>
+            <input type="text" id="petName">
+            <br>
+            <small>
+              Default name: Daround
+            </small>
+          </section>
+            <button id="start" onclick="startGame()">Start Game</button>
+        </main>
+      </section>
+    </div>
+
+    <!-- game screen -->
+    <div id="game">
+      <section class="card">
+        <!-- header -->
+        <header>
+          <h1>This is your Giga Pet</h1>
+        </header>
+
+        <!-- body -->
+        <main>
+          <section class="pet-image-container">
+            <img class="pet-image" src="images/daround.png">
+          </section>
+
+          <section class="dashboard">
+            <div>Name: <strong><span class="name"></span></strong></div>
+            <div>Energy: <strong><span class="energy"></span> / 100</strong></div>
+            <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+            <div>Happiness: <strong><span class="happiness"></span> / 100</strong></div>
+            <div class="button-container">
+              <button class="treat-button">
+                Treat
+              </button>
+              <button class="play-button">
+                Play
+              </button>
+              <button class="exercise-button">
+                Exercise
+              </button>
+              <button class="sleep-button">
+                Sleep
+              </button>
+            </div>
+          </section>
+          </main>
+        </section>
+    </div>
+    
+    <footer>
+      <section class="card">
+      <p>Art made by: @ARandomRin (aka myself). Do not distribute or replicate!</p>
+      </section>
+    </footer>
+    
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
