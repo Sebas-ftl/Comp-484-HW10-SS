@@ -32,7 +32,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       pet_info.happiness += 3;
       pet_info.weight += 2;
       $(".pet-image").slideUp(200, function() {
-        $(".pet-image").attr("src", "images/Darhound_eatinga.png");
+        $(".pet-image").attr("src", "images/Darhound_eating.png");
         $(".pet-image").slideDown(200);
 
         setTimeout(function() {
@@ -44,6 +44,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
         console.warn("Pet happiness over 100, setting it back to 100");
         pet_info.happiness = 100;
       }
+      
 
       console.group("stat update");
       console.log("Happiness: "+pet_info.happiness);
@@ -135,6 +136,11 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
           $(".pet-image").attr("src", "images/daround.png");
         }, 3000);
       })
+      const start = Date.now();
+
+      while (Date.now() - start < 3000) {
+
+      }
 
       console.group("stat update");
       console.log("Energy: "+pet_info.energy);
